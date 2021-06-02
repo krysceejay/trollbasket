@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {truncate} from '../utils/functions'
+import Layout from '../components/Layout'
 
 const Buy = () => {
     return (
+        <Layout>
         <main id="buy-sec">
             <span className="container page-title">Trollbasket</span>
             <section className="sub-header">
@@ -95,7 +97,7 @@ const Buy = () => {
                     <div className="prod-wrap">
                         <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
-                                <img src="/img/shoe2.jpeg" alt="image" />
+                                <img src="/img/shoe2.jpeg" alt="shoe" />
                             </div>
                             <div className="prod-details">
                                 <div className="prod-details-name">{truncate('Free sample small Free sample small Free sample small', 30)}</div>
@@ -105,7 +107,7 @@ const Buy = () => {
                         </Link>
                         <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
-                                <img src="/img/bestshoe.jpeg" alt="image" />
+                                <img src="/img/bestshoe.jpeg" alt="shoe" />
                             </div>
                             <div className="prod-details">
                                 <div className="prod-details-name">Free sample small</div>
@@ -115,7 +117,7 @@ const Buy = () => {
                         </Link>
                         <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
-                                <img src="/img/shoe2.jpeg" alt="image" />
+                                <img src="/img/shoe2.jpeg" alt="shoe" />
                             </div>
                             <div className="prod-details">
                                 <div className="prod-details-name">Free sample small</div>
@@ -125,7 +127,7 @@ const Buy = () => {
                         </Link>
                         <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
-                                <img src="/img/bestshoe.jpeg" alt="image" />
+                                <img src="/img/bestshoe.jpeg" alt="shoe" />
                             </div>
                             <div className="prod-details">
                                 <div className="prod-details-name">Free sample small</div>
@@ -135,7 +137,7 @@ const Buy = () => {
                         </Link>
                         <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
-                                <img src="/img/bestshoe.jpeg" alt="image" />
+                                <img src="/img/bestshoe.jpeg" alt="shoe" />
                             </div>
                             <div className="prod-details">
                                 <div className="prod-details-name">Free sample small</div>
@@ -145,7 +147,7 @@ const Buy = () => {
                         </Link>
                         <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
-                                <img src="/img/shoe2.jpeg" alt="image" />
+                                <img src="/img/shoe2.jpeg" alt="shoe" />
                             </div>
                             <div className="prod-details">
                                 <div className="prod-details-name">Free sample small</div>
@@ -155,7 +157,7 @@ const Buy = () => {
                         </Link>
                         <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
-                                <img src="/img/bestshoe.jpeg" alt="image" />
+                                <img src="/img/bestshoe.jpeg" alt="shoe" />
                             </div>
                             <div className="prod-details">
                                 <div className="prod-details-name">Free sample small</div>
@@ -165,7 +167,7 @@ const Buy = () => {
                         </Link>
                         <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
-                                <img src="/img/shoe2.jpeg" alt="image" />
+                                <img src="/img/shoe2.jpeg" alt="shoe" />
                             </div>
                             <div className="prod-details">
                                 <div className="prod-details-name">Free sample small</div>
@@ -175,7 +177,7 @@ const Buy = () => {
                         </Link>
                         <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
-                                <img src="/img/bestshoe.jpeg" alt="image" />
+                                <img src="/img/bestshoe.jpeg" alt="shoe" />
                             </div>
                             <div className="prod-details">
                                 <div className="prod-details-name">Free sample small</div>
@@ -187,6 +189,7 @@ const Buy = () => {
                 </div>
             </section>
         </main>
+        </Layout>
     )
 }
 

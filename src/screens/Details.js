@@ -1,7 +1,9 @@
 import React from 'react'
+import Layout from '../components/Layout'
 
 const Details = () => {
     return (
+        <Layout showTabs={false}>
         <main id="details-sec">
             <div className="container">
                 <header>
@@ -22,7 +24,7 @@ const Details = () => {
             </div>
             <section id="img-sec">
                 <div className="display-img">
-                    <img src="/img/bestshoe.jpeg" alt="product image"/>
+                    <img src="/img/bestshoe.jpeg" alt="product"/>
                 </div>
             </section>
             <section id="prod-desc">
@@ -30,10 +32,45 @@ const Details = () => {
                     <p className="name">NIKE Huararche 2019</p>
                     <p className="description">Get comfy and comfortable with the new 2019 designer
                         sneaker for all your events </p>
-                    <p className="price">N45,000 - N80,000 /Piece</p>    
+                    <p className="price">N45,000 - N80,000 <span className="per-piece">/Piece</span></p>    
+                </div>
+                <div className="prod-desc-drop">
+                    <div className="prod-desc-title">Product Description</div>
+                    <i className="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+            </section>
+            <section id="review">
+                <div className="container">
+                    <div className="heading">
+                        <div className="title">Review and Ratings</div>
+                        <div className="view-all">View all</div>
+                    </div>
+                    <div className="star-rating">
+                        <i className="fa fa-star fill" aria-hidden="true"></i>
+                        <i className="fa fa-star fill" aria-hidden="true"></i>
+                        <i className="fa fa-star fill" aria-hidden="true"></i>
+                        <i className="fa fa-star nofill" aria-hidden="true"></i>
+                        <i className="fa fa-star nofill" aria-hidden="true"></i>
+                        <span className="rate-num">3.0</span>
+                    </div>
+                    <p className="comment">This is the best product I have used in a long while and the
+                    size fits perfectly and I love the colors!!!!!</p>
+                    <div className="comment-person">
+                        <div className="comment-img">
+                            <img src="/img/smile-man.png" alt="comment" /> 
+                        </div>
+                        <span className="comment-name">Segun Arinze</span>
+                    </div>
+                </div>
+            </section>
+            <section id="action-btn">
+                <div className="action-wrap">
+                    <button className="btn btn-cart">Add to cart</button>
+                    <button className="btn btn-wish">Wishlist</button>
                 </div>
             </section>
         </main>
+        </Layout>
     )
 }
 

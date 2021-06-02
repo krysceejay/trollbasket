@@ -11,29 +11,29 @@ const Tabs = () => {
                         <span>Home</span>
                     </Link>
                 </li>
-                <li>
+                <li className="current">
                     <Link to='/buy' className="current">
                         <i className="fa fa-shopping-cart" aria-hidden="true"></i>
                         <span>Buy</span>
                     </Link>
                 </li>
                 <li>
-                    <a>
+                    <Link to='/'>
                         <i className="fa fa-tag" aria-hidden="true"></i>
                         <span>Deals</span>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a >
+                    <Link to='/'>
                         <i className="fa fa-credit-card-alt" aria-hidden="true"></i>
                         <span>Wallet</span>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a>
+                    <Link to='/'>
                         <i className="fa fa-bars" aria-hidden="true"></i>
                         <span>More</span>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>

@@ -67,6 +67,7 @@ div[class^='btn-'],
   bottom: 0;
   z-index: 10;
   width: 100%;
+  
   .nav-list {
     display: flex;
     justify-content: space-evenly;
@@ -75,14 +76,16 @@ div[class^='btn-'],
     li {
       padding: 1rem;
       text-align: center;
+      flex: 1;
+      &.current {
+        border-top: 3px #227EFF solid;
+      }
       a {
         text-decoration: none !important;
         color: #718596;
-        //border-bottom: 3px transparent solid;
-        //padding-bottom: 0.5rem;
+        //padding-top: 1.2rem;
         //transition: border-color 0.5s;
         font-size: 12px;
-
         &:hover {
           color: #227EFF;
         }
@@ -152,8 +155,8 @@ div[class^='btn-'],
           font-size: 10px;
           color: #fff;
           position: absolute;
-          top: -7px;
-          left: 12px;
+          top: -5px;
+          left: 14px;
         }
       }
 
@@ -332,6 +335,7 @@ div[class^='btn-'],
 
 #details-sec {
   //margin-top: 1.5rem;
+  padding-bottom: 6rem;
   header {
     display: flex;
     justify-content: space-between;
@@ -355,23 +359,23 @@ div[class^='btn-'],
   .header-icon2 {
     border-radius: 50%;
     .cart-num {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #ee6f44;
-          border-radius: 50%;
-          padding: 5px;
-          height: 16px;
-          width: 16px;
-          font-size: 10px;
-          color: #fff;
-          position: absolute;
-          top: -7px;
-          left: 12px;
-        }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ee6f44;
+      border-radius: 50%;
+      padding: 5px;
+      height: 16px;
+      width: 16px;
+      font-size: 10px;
+      color: #fff;
+      position: absolute;
+      top: -5px;
+      left: 14px;
+    }
   }
   .arrow-left {
-        font-size: 1.6rem;
+      font-size: 1.6rem;
     }
   .page-title {
     font-style: normal;
@@ -398,5 +402,121 @@ div[class^='btn-'],
       object-fit: cover;
       border-radius: 4px;
     }
+  }
+}
+
+#prod-desc {
+  margin-top: 1rem;
+  .name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #212C3D;
+  }
+  .description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    color: #627483;
+  }
+  .price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #212C3D;
+    margin-top: 0.6rem;
+  }
+  .per-piece {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    color: #627483;
+  }
+  .prod-desc-drop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #f9fafc;
+    padding: 1rem;
+    margin-top: 1rem;
+    .prod-desc-title {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #212C3D;
+    }
+    i {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+#review {
+  margin-top: 1rem;
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #212C3D;
+    }
+    .view-all {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #227EFF;
+    }
+  }
+  .star-rating {
+    margin-top: 22px;
+    .rate-num {
+      color: #212C3D;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 21px;
+      margin-left: 6px;
+    }
+  }
+  .comment {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    color: #627483;
+  }
+  .comment-person {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .comment-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    display: inline-block;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  .comment-name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    color: #212C3D;
   }
 }
