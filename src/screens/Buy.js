@@ -1,43 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {truncate} from '../utils/functions'
 
 const Buy = () => {
     return (
-        <>
-        <div id="tabs">
-            <ul className="nav-list">
-                <li>
-                    <a>
-                        <i className="fa fa-home" aria-hidden="true"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a className="current">
-                        <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-                        <span>Buy</span>
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        <i className="fa fa-tag" aria-hidden="true"></i>
-                        <span>Deals</span>
-                    </a>
-                </li>
-                <li>
-                    <a >
-                        <i className="fa fa-credit-card-alt" aria-hidden="true"></i>
-                        <span>Wallet</span>
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        <i className="fa fa-bars" aria-hidden="true"></i>
-                        <span>More</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
         <main id="buy-sec">
             <span className="container page-title">Trollbasket</span>
             <section className="sub-header">
@@ -95,6 +61,7 @@ const Buy = () => {
                 </div>
             </section>
             <section id="category">
+            <div className="container">
                 <div className="cat-wrapper">
                     <div className="cat-wrapper-single">
                         <div className="cat-icon list">
@@ -121,11 +88,12 @@ const Buy = () => {
                         <div className="cat-text">Product Category</div>
                     </div>
                 </div>
+                </div>
             </section>
             <section id="product-sec">
                 <div className="container">
                     <div className="prod-wrap">
-                        <div className="prod-wrap-single">
+                        <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
                                 <img src="/img/shoe2.jpeg" alt="image" />
                             </div>
@@ -134,8 +102,8 @@ const Buy = () => {
                                 <div className="prod-details-price">#900 - #1,500</div>
                                 <div className="prod-details-quantity">MOQ 4(pieces)</div>
                             </div>
-                        </div>
-                        <div className="prod-wrap-single">
+                        </Link>
+                        <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
                                 <img src="/img/bestshoe.jpeg" alt="image" />
                             </div>
@@ -144,8 +112,8 @@ const Buy = () => {
                                 <div className="prod-details-price">#900 - #1,500</div>
                                 <div className="prod-details-quantity">MOQ 4(pieces)</div>
                             </div>
-                        </div>
-                        <div className="prod-wrap-single">
+                        </Link>
+                        <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
                                 <img src="/img/shoe2.jpeg" alt="image" />
                             </div>
@@ -154,8 +122,8 @@ const Buy = () => {
                                 <div className="prod-details-price">#900 - #1,500</div>
                                 <div className="prod-details-quantity">MOQ 4(pieces)</div>
                             </div>
-                        </div>
-                        <div className="prod-wrap-single">
+                        </Link>
+                        <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
                                 <img src="/img/bestshoe.jpeg" alt="image" />
                             </div>
@@ -164,8 +132,8 @@ const Buy = () => {
                                 <div className="prod-details-price">#900 - #1,500</div>
                                 <div className="prod-details-quantity">MOQ 4(pieces)</div>
                             </div>
-                        </div>
-                        <div className="prod-wrap-single">
+                        </Link>
+                        <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
                                 <img src="/img/bestshoe.jpeg" alt="image" />
                             </div>
@@ -174,8 +142,8 @@ const Buy = () => {
                                 <div className="prod-details-price">#900 - #1,500</div>
                                 <div className="prod-details-quantity">MOQ 4(pieces)</div>
                             </div>
-                        </div>
-                        <div className="prod-wrap-single">
+                        </Link>
+                        <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
                                 <img src="/img/shoe2.jpeg" alt="image" />
                             </div>
@@ -184,8 +152,8 @@ const Buy = () => {
                                 <div className="prod-details-price">#900 - #1,500</div>
                                 <div className="prod-details-quantity">MOQ 4(pieces)</div>
                             </div>
-                        </div>
-                        <div className="prod-wrap-single">
+                        </Link>
+                        <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
                                 <img src="/img/bestshoe.jpeg" alt="image" />
                             </div>
@@ -194,8 +162,8 @@ const Buy = () => {
                                 <div className="prod-details-price">#900 - #1,500</div>
                                 <div className="prod-details-quantity">MOQ 4(pieces)</div>
                             </div>
-                        </div>
-                        <div className="prod-wrap-single">
+                        </Link>
+                        <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
                                 <img src="/img/shoe2.jpeg" alt="image" />
                             </div>
@@ -204,8 +172,8 @@ const Buy = () => {
                                 <div className="prod-details-price">#900 - #1,500</div>
                                 <div className="prod-details-quantity">MOQ 4(pieces)</div>
                             </div>
-                        </div>
-                        <div className="prod-wrap-single">
+                        </Link>
+                        <Link to='/details/1234ads421egjdsc' className="prod-wrap-single">
                             <div className="prod-img">
                                 <img src="/img/bestshoe.jpeg" alt="image" />
                             </div>
@@ -214,12 +182,11 @@ const Buy = () => {
                                 <div className="prod-details-price">#900 - #1,500</div>
                                 <div className="prod-details-quantity">MOQ 4(pieces)</div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </section>
         </main>
-        </>
     )
 }
 
