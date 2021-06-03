@@ -22,13 +22,13 @@ const Buy = () => {
                     </div>
                     <span>My Orders</span>
                 </div>
-                <div className="sub-header-single">
+                <Link to="/cart" className="sub-header-single">
                     <div className="sub-header-single-1 relative">
                         <i className="fa fa-shopping-cart cart" aria-hidden="true"></i>
                         <span className="cart-num">9</span>
                     </div>
                     <span>Cart</span>
-                </div>
+                </Link>
             </section>
             <section id="search">
                 <div className="container">

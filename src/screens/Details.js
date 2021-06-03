@@ -1,13 +1,16 @@
 import React from 'react'
+import { useHistory, Link } from 'react-router-dom'
 import Layout from '../components/Layout'
 
+
 const Details = () => {
+    const history = useHistory()
     return (
         <Layout showTabs={false}>
         <main id="details-sec">
             <div className="container">
                 <header>
-                    <div className="header-icon">
+                    <div className="header-icon" onClick={() => history.goBack() }>
                         <i className="fa fa-angle-left arrow-left" aria-hidden="true"></i>
                     </div>
                     <span className="container page-title">Details</span>
@@ -15,10 +18,10 @@ const Details = () => {
                         <div className="header-icon2">
                             <i className="fa fa-search" aria-hidden="true"></i>
                         </div>
-                        <div className="header-icon2 relative">
+                        <Link to="/cart" className="header-icon2 relative">
                             <i className="fa fa-shopping-cart cart" aria-hidden="true"></i>
                             <span className="cart-num">9</span>
-                        </div>
+                        </Link>
                     </div>
                 </header>
             </div>
@@ -34,9 +37,13 @@ const Details = () => {
                         sneaker for all your events </p>
                     <p className="price">N45,000 - N80,000 <span className="per-piece">/Piece</span></p>    
                 </div>
-                <div className="prod-desc-drop">
-                    <div className="prod-desc-title">Product Description</div>
-                    <i className="fa fa-angle-right" aria-hidden="true"></i>
+                <div className="prod-desc-drop-wrap">
+                    <div className="container">
+                        <div className="prod-desc-drop">
+                            <div className="prod-desc-title">Product Description</div>
+                            <i className="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="review">
