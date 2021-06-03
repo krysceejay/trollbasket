@@ -738,3 +738,61 @@ div[class^='btn-'],
     }
   }
   }
+
+  #success-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #207bfa;
+    height: 100vh;
+
+    .icon-wrapper {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .check-msg {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      color: #FFFFFF;
+    }
+    .check-extramsg {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #E9F2FF;
+    }
+
+    .success-icon-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #0350BB;
+      padding: 3px;
+      height: 160px;
+      width: 160px;
+    }
+    .success-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #46BCAA;
+      padding: 3px;
+      width: 122px;
+      height: 122px;
+    }
+    .check-icon {
+      font-size: 53.54px;
+      color: #fff;
+    }
+    // .gotit {
+    //   justify-self: flex-end;
+    // }
+  }

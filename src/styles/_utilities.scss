@@ -79,6 +79,17 @@
     width: 100%;
     margin-top: 1.5rem;
   }
+  &-gotit {
+    @extend %btn-shared;
+    color: #227EFF;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 1rem 2rem;
+    width: 90%;
+    margin-top: 1.5rem;
+  }
   &-cart {
     @extend %btn-shared;
     color: #fff;

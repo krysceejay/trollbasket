@@ -76,7 +76,7 @@ const Cart = () => {
                             <div className="total-text">Total</div>
                             <div className="total-price pt">N18,099.09</div>
                         </div>
-                        <button className="btn btn-checkout">Checkout</button>
+                        <Link to="/success" className="btn btn-checkout">Checkout</Link>
                     </div>
                 </section>
                 <section id="recent-views">
