@@ -1,0 +1,13 @@
+{
+  "appId": "com.trollbasket",
+  "appName": "Trollbasket",
+  "webDir": "build",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {},
+  "npmClient": "npm"
+}

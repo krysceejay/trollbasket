@@ -10,7 +10,7 @@ const Success = () => {
                     <i className="fa fa-check check-icon" aria-hidden="true"></i>
                 </div>
             </div>
-            <p className="check-msg">Checkout Succesful</p>
+            <p className="check-msg">Checkout Successful</p>
             <p className="check-extramsg">Your checkout is now successful.</p>
         </div>
             
